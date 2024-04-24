@@ -1,0 +1,25 @@
+git config --global user.name anglusa
+git config --global user.email otavio.baroni@etec.sp.gov.br
+
+Executar, no terminal, 1 por vez, em ordem:
+    dotnet new mvc -o ViotaFlix
+    dotnet new sln --name ViotaFlix
+    dotnet sln add ViotaFlix\ViotaFlix.csproj
+
+
+- Database First / Code First
+- instalar os pacotes necessários
+
+1º Forma - Acessar o site nuget.org
+    - dotnet add package Microsoft.EntitityFrameworkCore --version 8.0.4
+
+2º Forma - Usar a extensão Nuget Gallery
+    - Shift + Ctrl + P
+    - Nuget [enter]
+    - Pesquisar e instalar os pacotes:
+       - EntitityFrameworkCore
+       - EntitityFrameworkCore.Design
+       - EntitityFrameworkCore.Tools
+       - Pomelo.EntitityFrameworkCore.MySql
+
+
