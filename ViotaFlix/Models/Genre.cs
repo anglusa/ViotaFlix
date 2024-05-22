@@ -17,4 +17,6 @@ namespace ViotaFlix.Models;
 
         public string Name { get; set; }
 
+        public ICollection<MovieGenre> Movies { get; set; }
+
     }

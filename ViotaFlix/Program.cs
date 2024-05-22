@@ -1,6 +1,16 @@
+using Microsoft.EntityFrameworkCore;
+using ViotaFlix.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+string conn = builder.Configuration.
+GetConnectionString("ViotaFlixConnection");
+var version = ServerVersion.AutoDetect(conn);
+builder.Services.AddDbContext<AppDbContext>(
+    opt => opt.UseMySql(conn, version)
+);
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
