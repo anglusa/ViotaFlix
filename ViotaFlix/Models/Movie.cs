@@ -14,7 +14,7 @@ namespace ViotaFlix.Models;
         [Display(Name = "Titulo Original")]
         [Required(ErrorMessage = "Por Favor informe o titulo original")]
         [StringLength(100,ErrorMessage ="O Titulo Original deve possuir 100 caracteres")]
-        public string OrginalTitle { get; set;}
+        public string OriginalTitle { get; set;}
         [Display(Name = "Titulo")]
         [Required(ErrorMessage = "Por Favor,informe o titulo original")]
         [StringLength(100,ErrorMessage ="O Titulo deve possuir 100 caracteres")]
